@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#navbar
+{
+    display: flex;
+align-items: center;
+background-color: rgba(0, 0, 0, -10.6);
+backdrop-filter: blur(16px);
+padding: 1px;
+}
+#logo img
+{
+    width: 22%;
+    padding-left: 5px;
+}
+.main
+{
+    margin-left: 5px;
+    display: flex;
+}
+ul{
+    position: absolute;
+    left: 87px;
+}
+#navbar ul li{
+/* color: white; */
+list-style: none;
+}
+#navbar ul li a{
+    font-size: 22px;
+    color: rgb(245, 244, 243);
+    padding: 0px 30px;
+    border-radius:20px;
+    text-decoration: none;
+    font-family:'Baloo Bhai 2', cursive;
+}
+#navbar::before{
+content: "";
+background-color: black;
+position: absolute;
+height: 100%;
+width: 100%;
+z-index: -1;
+opacity: -1.5;
+    }
+    #navbar ul li a:hover{
+        color: rgb(247, 244, 244);
+        background-color: rgb(255, 117, 4);
+    }
+#home
+{
+    display:flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before
+{
+ 
+    content: "";
+    background: url("/project/mian.jpg")no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 72%;
+    width: 100%;
+    z-index: -1;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family:'Bree Serif', serif;
+    width: 125%;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size:22px;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 5px;
+    width: 100%;
+}
+.h-primary
+{
+    font-size: 96px;
+}
+
+.text
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -39px;
+}
+#btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    width: 21%;
+    font-size: 23px;
+    font-family:'Baloo Bhai 2', cursive;
+    background-color: orange;
+    border: none;
+    border-radius:5px;
+    color: white;
+    cursor: pointer;
+}
+#btn:hover
+{
+    background-color: #f3bb44;
+}
+.btn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    padding-left: 5px;
+    filter: brightness(0) invert(1);
+}
+#west
+{
+ color: orange;
+}
+.center
+{
+    text-align: center;
+}
+
+#services
+{
+  margin: 34px; 
+  display: flex;
+} 
+#services .box
+{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 24px;
+    border-radius: 28px;
+    background-color: rgb(199, 183, 183);
+}
+#services .box img
+{
+ margin: auto;
+ display: block;
+height: 156px;
+}
+
